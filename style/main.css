@@ -147,6 +147,28 @@ footer section {
     flex-direction: column;
   }
 }
+footer .phone-fix {
+  box-sizing: content-box;
+  position: fixed;
+  --adaptive: "b=20=50 r=20=50 w=30=50 h=30=50";
+}
+footer .phone-fix:after {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  top: -6px;
+  right: -6px;
+  bottom: -6px;
+  left: -6px;
+  animation: 2s call linear infinite;
+  box-shadow: 0 0 6px 2px white;
+}
+footer .phone-fix img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
 footer a {
   color: white;
   text-decoration: none;
@@ -175,6 +197,16 @@ footer .name {
   --adaptive: "fs=2=3=rem";
   font-family: Caveat, sans-serif;
   font-style: italic;
+}
+@keyframes call {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.5);
+    opacity: 0;
+  }
 }
 :root {
   --screen-res: "320=1920=2560";
