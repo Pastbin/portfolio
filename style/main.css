@@ -1,0 +1,223 @@
+.about {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 600px) {
+  .about {
+    flex-wrap: wrap;
+  }
+}
+.about .welcome {
+  --adaptive: "mt=20=40 mr=0=30 fs=1=1.3=rem";
+  max-width: 1000px;
+}
+.about .description {
+  text-align: justify;
+  color: rgba(0, 0, 0, 0);
+  --matrix: white;
+}
+.about .description p {
+  text-indent: 30px;
+}
+.about .avatar {
+  flex-shrink: 0;
+  max-width: 40%;
+  max-height: 40vw;
+}
+@media (max-width: 600px) {
+  .about .avatar {
+    max-height: none;
+    flex-shrink: 1;
+    max-width: none;
+  }
+}
+.about .avatar img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.skills-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.skills-item {
+  margin-right: 10px;
+  width: 30%;
+}
+@media (max-width: 450px) {
+  .skills-item {
+    width: 45%;
+  }
+}
+.skills-name {
+  --adaptive: "fs=1=1.2=rem";
+}
+.skills .progress-wrap {
+  position: relative;
+  border-radius: 3px;
+  margin-right: 5px;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right, orangered, lime) 1;
+  overflow: hidden;
+  display: inline-block;
+  height: 10px;
+  width: 100%;
+}
+.skills .progress-wrap .progress {
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+}
+.feature {
+  --adaptive: "mt=30=60";
+}
+.feature .items {
+  height: 180px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+@media (max-width: 1600px) {
+  .feature .items {
+    height: 180px;
+  }
+}
+@media (max-width: 1200px) {
+  .feature .items {
+    height: 220px;
+  }
+}
+@media (max-width: 1100px) {
+  .feature .items {
+    height: 330px;
+  }
+}
+@media (max-width: 850px) {
+  .feature .items {
+    height: auto;
+  }
+}
+.feature .item {
+  flex-grow: 1;
+  margin-bottom: 5px;
+  color: rgba(0, 0, 0, 0);
+  --matrix: white;
+}
+.feature .ok::before,
+.feature .not-ok::before {
+  margin-right: 5px;
+  content: "";
+  background: url("../img/check.png") no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+.feature .not-ok::before {
+  background: url("../img/X.png") no-repeat;
+  background-size: cover;
+}
+.projects .project {
+  margin-bottom: 15px;
+  color: rgba(0, 0, 0, 0);
+  --matrix: white;
+}
+.projects .project a {
+  color: #fff;
+  --adaptive: "fs=1.1=1.3=rem";
+}
+.projects .project a:hover {
+  text-decoration: underline;
+}
+footer {
+  background: #000;
+}
+footer section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  --adaptive: "p=5/0=30/0 mt=10=30 fs=1=1.3=rem";
+}
+@media (max-width: 700px) {
+  footer section {
+    flex-direction: column;
+  }
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer .mail,
+footer .phone,
+footer .telegram {
+  margin-bottom: 20px;
+}
+footer img {
+  filter: drop-shadow(0 0 2px white);
+  margin-right: 15px;
+  vertical-align: middle;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+footer .github {
+  margin-bottom: 10px;
+}
+footer .github a {
+  text-decoration: underline;
+}
+footer .name {
+  --adaptive: "fs=2=3=rem";
+  font-family: Caveat, sans-serif;
+  font-style: italic;
+}
+:root {
+  --screen-res: "320=1920=2560";
+}
+* {
+  --adaptive: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  --screen-res: "320=1920";
+  font-family: monospace, sans-serif;
+  background: #000;
+}
+html {
+  overflow-x: hidden;
+  --adaptive: "fs=16=16=21";
+  color: white;
+}
+#bg {
+  background: url("../img/bg/bg.jpg") no-repeat;
+  background-size: cover;
+  position: fixed;
+  transform: scale(1.05);
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  filter: blur(2px) brightness(0.2);
+}
+#bg pre {
+  transform: rotateY(9deg);
+  width: 100vw;
+}
+.title {
+  text-align: center;
+  --adaptive: "fs=1.4=2=rem m=20/0=40/0";
+  --matrix: white;
+  color: rgba(0, 0, 0, 0);
+}
+section {
+  padding: 0 10px;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+/*# sourceMappingURL=main.css.map */

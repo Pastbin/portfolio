@@ -1,0 +1,42 @@
+.skills{
+
+  &-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  &-item{
+    margin-right: 10px;
+      width: 30%;
+
+    @media (max-width: 450px){
+      width: 45%;
+    }
+
+  }
+
+  &-name{
+    --adaptive: "fs=1=1.2=rem";
+  }
+
+  .progress-wrap{
+    position: relative;
+    border-radius: 3px;
+    margin-right: 5px;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to right, orangered,lime) 1;
+    overflow: hidden;
+    display: inline-block;
+    height: 10px;
+    width: 100%;
+
+    .progress{
+      display: inline-block;
+      position: absolute;
+      height: 100%;
+    }
+
+  }
+}

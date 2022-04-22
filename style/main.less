@@ -1,0 +1,58 @@
+@import "about";
+@import "skills";
+@import "feature";
+@import "projects";
+@import "footer";
+
+
+:root {
+  --screen-res: "320=1920=2560";
+}
+
+* {
+  --adaptive: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  --screen-res: "320=1920";
+  font-family: monospace, sans-serif;
+  background: #000;
+}
+
+html {
+  overflow-x: hidden;
+  --adaptive: "fs=16=16=21";
+  color: white;
+}
+
+#bg {
+  background: url("../img/bg/bg.jpg") no-repeat;
+  background-size: cover;
+  position: fixed;
+  transform: scale(1.05);
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  filter: blur(2px) brightness(0.2);
+
+  pre {
+    transform: rotateY(9deg);
+    width: 100vw;
+  }
+}
+
+.title {
+  text-align: center;
+  --adaptive: "fs=1.4=2=rem m=20/0=40/0";
+  --matrix: white;
+  color: rgba(0, 0, 0, 0);
+}
+
+section {
+  padding: 0 10px;
+  margin: 0 auto;
+  max-width: 1400px;
+}
