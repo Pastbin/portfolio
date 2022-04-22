@@ -75,27 +75,27 @@
   --adaptive: "mt=30=60";
 }
 .feature .items {
-  height: 180px;
+  height: 140px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 }
 @media (max-width: 1600px) {
   .feature .items {
-    height: 180px;
+    height: 140px;
   }
 }
 @media (max-width: 1200px) {
   .feature .items {
-    height: 220px;
+    height: 200px;
   }
 }
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
   .feature .items {
-    height: 330px;
+    height: 280px;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 750px) {
   .feature .items {
     height: auto;
   }
