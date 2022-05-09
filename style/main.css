@@ -188,11 +188,15 @@ footer img {
   height: 30px;
   object-fit: cover;
 }
-footer .github {
+footer .portfolio {
   margin-bottom: 10px;
 }
-footer .github a {
+footer .portfolio a {
   text-decoration: underline;
+}
+footer .portfolio-wrap {
+  display: flex;
+  flex-direction: column;
 }
 footer .name {
   --adaptive: "fs=2=3=rem";
